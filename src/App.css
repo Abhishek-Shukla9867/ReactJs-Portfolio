@@ -1,0 +1,11 @@
+
+
+.progress-bar{
+    height: 30px;
+    width: 70%;
+    background-color: rgb(72, 71, 71);
+    border-radius: 20px;
+    text-align: center;
+   
+}
+
