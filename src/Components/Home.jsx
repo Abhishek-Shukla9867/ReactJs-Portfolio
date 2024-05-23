@@ -15,13 +15,15 @@ import { ReactTyped, Typed } from "react-typed";
 
 import pic from "../assets/User.jpg";
 
+import CV  from'../assets/Abhishek.pdf'
+
 
 
 
 function Home() {
   return (
     <>
-      <div  name="Home"          className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20  md:-mt-2 " >
+      <div  name="Home"  className="max-w-screen-2xl container mx-auto px-4 md:px-20   -mt-0  md:-mt-2   bg-black text-yellow-600" >
         <div className="flex flex-col md:flex-row">
           <div className="left md:w-1/2 mt-12  md:mt-24 space-y-2 order-2 md:order-1 text-center sm-mt-2 ">
             <span className="text-xl ">Welcome to My Feed</span>
@@ -123,12 +125,10 @@ function Home() {
             </div>
           </div>
 
-          <div className="right md:w-1/2 md:ml-48 md:mt-10 sm:mt-2 order-1 -mt-12  ">
+          <div className="right md:w-1/2 md:ml-48 md:mt-10 sm:mt-2 order-1   bg-black mt-4 ">
             <img
               src={pic}
-              className="     rounded-lg  md:w-[450px] md:h-[450px] mx-auto     
-              
-              shadow-lg p-1  shadow-blue-300
+              className="     rounded-lg  md:w-[450px] md:h-[450px] mx-auto    text-yellow-600       shadow-lg p-1  shadow-blue-300 
               
               "
               alt=""
@@ -137,16 +137,28 @@ function Home() {
         </div>
 
         <div className="md:ml-32  mt-4 flex justify-center md:justify-start  space-x-4   md:-mt-20">
+
+
+           <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
           <button className=" bg-pink-500 hover:bg-pink-200  shadow-lg shadow-pink-500 text-white font-bold py-2 px-4 rounded-full  transition duration-300 ease-in-out md:w-32 md:h-14  w-28 h-12 before:  hover:scale-110 duration-200 ">
             Hire Me
           </button>
+          </a>
+
+
+          <a href={CV} target="_blank" rel="noopener noreferrer" >
           <button className="    bg-pink-500 hover:bg-pink-200  shadow-lg shadow-pink-500 text-white font-bold py-2 px-4 rounded-full  transition duration-300 ease-in-out md:w-32 md:h-14  w-28 h-12 before:  hover:scale-110 duration-200              ">
             {" "}
             Get CV
           </button>
+          </a>
+
+
+
+
         </div>
 
-        <div className="flex items-center justify-center h-full mt-6">
+        <div className="flex items-center justify-center h-full mt-8 mb-4">
           <hr className="border-t border-gray-300 w-1/4 mr-4       " />
           <div className="text-center font-bold   ">
             <span className="text-red-800   text-2xl "> A</span>bout Me

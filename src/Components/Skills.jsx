@@ -35,7 +35,7 @@ function Skills() {
   ];
 
   return (
-    <div  name="Projects" className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10 md:-mt-2">
+    <div   className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10 md:-mt-5 -mt-5 bg-black text-yellow-600">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 text-center">
         {CardItems.map((item) => (
           <div key={item.Id} className="md:w-[300px] h-[200px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110  duration-200 flex flex-col justify-center  items-center   shadow-blue-300 ">

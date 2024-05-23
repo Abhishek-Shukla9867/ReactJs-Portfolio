@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import pic from "../assets/Logo.png";
 
-import { Link, link } from "react-scroll";
+import { Link, } from "react-scroll";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -37,7 +37,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md h-16  sticky top-0 bg-white z-50">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md  sticky top-0 bg-black text-yellow-600 z-50">
         <div className="flex justify-between h-16 items-center">
           <div className="flex space-x-2">
             <img src={pic} className="h-12 w-12 rounded-full" alt="Logo" />
@@ -75,7 +75,7 @@ function Navbar() {
         {/* Mobile Phone Device */}
 
         {menu && (
-          <div className="bg-white w-96">
+          <div className=" bg-black text-yellow-600">
             <ul className="md:hidden flex flex-col h-screen items-center justify-center  space-y-4  text-xl ">
               {navItem.map(({ id, text }) => (
                 <li

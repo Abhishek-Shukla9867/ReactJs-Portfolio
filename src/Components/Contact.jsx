@@ -41,8 +41,10 @@ function Contact() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20  mb-2">
-        <h1 className="text-3xl font-bold mb-4">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20  mt-0     bg-black text-yellow-600  ">
+
+
+        <h1 className="text-3xl font-bold  ">
           Contact <span className="text-red-500">Form</span>
         </h1>
 
